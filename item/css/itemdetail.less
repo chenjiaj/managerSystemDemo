@@ -1,0 +1,109 @@
+#main{
+    .content{
+        hr{
+            color: #ccc;
+        }
+        .introduce{
+            padding: 10px 20px;
+            h3{
+                padding: 10px 0 0 0;
+                font-size: 18px;
+                font-family: 'microsoft yahei';
+                color: #333;
+                font-weight: bold;
+                a{
+                    font-size: 14px;
+                    color:#57a3d9;
+                    margin-left: 15px;
+                }
+            }
+
+            p{
+                text-indent: 33px;
+                padding: 10px 0 0 0;
+                color: #777;
+                font-family: 'microsoft yahei';
+            }
+        }
+
+        .monitor-manager{
+            margin-top: 30px;
+
+        }//monitor-manager end
+
+        .relate-person{
+            margin-top: 30px;
+            .manager-mark{
+                position: relative;
+                .title{
+                    position: absolute;
+                    left: 0;
+                    top: -43px;
+                    color: #000;
+
+                    z-index: 1px;
+                    .text{
+                        background-color: #fff;
+                        padding: 5px;
+                        width: 100px;
+                        border-radius: 5px;
+                        border:1px solid #aaa;
+
+                    }
+                    .img{
+                        position: relative;
+                        z-index: 2;
+                        margin-top: -2px;
+                        width: 100%;
+                        height: 18px;
+                        background: url("../../common/img/title.png") center bottom no-repeat;
+                    }
+
+                }
+            }
+            .person{
+                margin: 10px 0 10px -5px;
+                li{
+                    width: 80px;
+                    text-align: center;
+                    border:1px solid #ddd;
+                    padding: 5px 0;
+                    float: left;
+                    margin: 5px;
+                }
+                .manager-mark{
+                    background-color: #57a3d9;
+                    border:0;
+                    color:#fff;
+                    cursor: pointer;
+                    position: relative;
+                }
+            }
+            .label-input{
+                width: 300px;
+                input{
+                    width: 200px;
+                    vertical-align:top;
+                }
+                .list{
+                    width: 200px;
+                    border:1px solid #ccc;
+                    max-height: 200px;
+                    overflow: auto;
+                    li{
+                        padding: 5px;
+                        cursor: pointer;
+                        color: #bbb;
+                        &:hover{
+                            background-color: #ddd;
+                        }
+                    }
+                }
+            }
+            .label-div{
+                text-align: center;
+                padding-right: 0;
+            }
+        }//relate-person end
+    }//content end
+}//main end

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+    <title>
+        监控平台首页
+    </title>
+
+    <meta name="description" content="星星药品冷柜物联网管理系统"/>
+    <meta name="keywords" content="星星药品冷柜物联网管理系统 星星药品 物联网 管理系统"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8"/>
+    <!--css 样式-->
+    <link href="../../common/css/fontello.css" type="text/css" rel="stylesheet"/>
+    <link href="../../common/css/animation.css" type="text/css" rel="stylesheet"/>
+    <link href="../../common/css/common.less" type="text/css" rel="stylesheet"/>
+    <link href="../../common/css/tips.css" type="text/css" rel="stylesheet"/>
+    <link href="../../common/css/form.css" type="text/css" rel="stylesheet"/>
+    <style type="text/css">
+        .base-info-div{
+            padding: 20px;;
+        }
+        .input-div-hasborder{
+            width: 421px;
+            border:1px solid #ddd;
+            }
+        .input-div-hasborder .label-div{
+            border:0;
+            height: 37px;
+            line-height: 37px;
+            border-left: 1px solid transparent;
+        }
+        .input-div-hasborder .label-input{
+            width: 300px;
+            border-left: 1px solid #ddd;
+            padding: 10px;
+            height: 37px;
+            line-height: 17px;
+        }
+        .input-div-hasborder input[type='radio']{
+            width: auto;
+            vertical-align: text-bottom;
+        }
+
+    </style>
+</head>
+<body>
+<!--[if lte IE 7]>
+<div id="ie-hock">
+    你正在使用星星药品冷柜物联网管理系统<strong>不支持</strong>的IE低级浏览器，<br />为了更好的使用OneNET，请您立即 <a class="blue" href="http://windows.microsoft.com/zh-cn/internet-explorer/download-ie" target="_blank">升级IE浏览器</a> 或者用更快更安全的 <a class="blue" href="https://www.google.com/intl/zh-CN/chrome/browser/?hl=zh-CN" target="_blank">谷歌浏览器Chrome</a> 。
+</div>
+<![endif]-->
+
+<!--******************************************* header部分 **********************************************-->
+<!--头部html代码-->
+<div id="header" class="clear-fix">
+    <div class="logoarea">
+        <div class="logo-img"></div>
+        <h1 class="logo-text">监控平台</h1>
+    </div>
+
+    <div class="user-info">
+        <span class="icons-user"></span>
+        <span>您好，admin，</span><a href="#" class="j_exit">[退出登录]</a>&nbsp; <span class="time"></span>
+    </div>
+</div>
+
+<!--******************************************* main中间部分 **********************************************-->
+<!--内容区域-->
+<div id="main">
+
+    <!--******************************************* 左边导航部分 **********************************************-->
+    <!--siderbar-->
+    <div class="siderbar">
+        <ul class="list">
+            <!--主页-->
+            <li><a href="../../index.html"><span class="icon icon-home"></span>平台首页</a></li>
+            <!--项目-->
+            <li><a href="#"><span class="icon icon-th-list"></span>项目</a>
+                <ul class="hide">
+                    <li><a href="../../item/html/itemlist.html"><span class="active-line"></span><span class="icon icon-right-dir"></span>项目列表</a></li>
+                    <li><a href="../../item/html/myitem.html"><span class="active-line"></span><span class="icon icon-right-dir"></span>我的项目</a></li>
+                    <li><a href="../../item/html/additem.html"><span class="active-line"></span><span class="icon icon-right-dir"></span>新增项目</a></li>
+                </ul>
+            </li>
+
+            <!--账户设置-->
+            <li><a href="#"  class="active"><span class="icon icon-cog"></span>账户设置</a>
+                <ul>
+                    <li><a href="baseinfo.html" class="active"><span class="active-line"></span><span class="icon icon-right-dir"></span>基础信息</a></li>
+                    <li>
+                        <a href="modifypass.html"><span class="active-line"></span><span class="icon icon-right-dir"></span>修改密码</a>
+                    </li>
+                    <li>
+                        <a href="register.html"><span class="active-line"></span><span class="icon icon-right-dir"></span>邀请注册</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <!--siderbar end-->
+    <!--******************************************* 右边主体部分 **********************************************-->
+    <!--content-->
+    <div class="content">
+        <h2 class="content-title-style1"><span class="icons-header2"></span>
+            基本信息</h2>
+        <!--表格通用样式-->
+        <div class="base-info-div">
+            <form  id="baseInfo">
+                <input type="hidden" name = "id" value=""/>
+
+                <div class="input-div clear-fix">
+                    <label class="label-div"><span class="start">*</span>帐户：</label>
+                    <div class="label-input">
+                        <input type="text" name="username" id="username" class="form-control"
+                                value="zhangzhan" readonly="readonly"/>
+                    </div>
+                </div>
+
+                <div class="input-div clear-fix">
+                    <label class="label-div"><span class="start">*</span>姓名：</label>
+                    <div class="label-input">
+                        <input type="text" name="name" id="name" class="form-control"
+                               data-validation="required" value=""
+                               data-validation-error-msg="请输入姓名"/>
+                    </div>
+                </div>
+                <div class="input-div clear-fix">
+                    <label class="label-div"><span class="start">*</span>邮箱：</label>
+                    <div class="label-input">
+                        <input type="text" name="email" id="email" class="form-control"
+                               data-validation ="custom"
+                               data-validation-regexp="(^(\w)+(\.\w+)*@(\w)+((\.\w+)+)$)"
+                               data-validation-error-msg="请输入正确的电子邮箱格式"  value="" />
+                    </div>
+                </div>
+                <div class="input-div clear-fix">
+                    <label class="label-div"><span class="start">*</span>手机：</label>
+                    <div class="label-input">
+                        <input type="text" name="phone" id="phone" class="form-control"
+                               data-validation ="custom"
+                               data-validation-regexp="(^(\d)+(\d|-|\+|\s)*(\d)+$)"
+                               data-validation-error-msg="请输入正确的联系电话格式" value="" />
+                    </div>
+                </div>
+
+                <div class="input-div clear-fix input-div-hasborder">
+                    <label class="label-div"><span class="start">*</span>接收报警：</label>
+                    <div class="label-input">
+                        <input type="radio" value="1" name="isaccept" checked="checked"/>接收
+                        <input type="radio" value="1" name="isaccept"/>不接收
+                    </div>
+                </div>
+                <a href="#" class="btn j_saveBtn">保存</a>
+            </form>
+        </div>
+    </div>
+    <!--content end-->
+</div>
+
+<!--******************************************* 底部footer **********************************************-->
+<!--底部-->
+<div id="footer">
+    中移物联网有限公司 监控平台 版权所有 Copyright(c)2015
+</div>
+
+<!--js-->
+<script type="text/javascript" src="../../common/js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="../../common/js/jquery.form-validator.js"></script>
+<script type="text/javascript" src="../../common/js/common.js"></script>
+<script type="text/javascript" src="../../common/js/tips.js"></script>
+<script type="text/javascript" src="../js/baseinfo.js"></script>
+</body>
+</html>

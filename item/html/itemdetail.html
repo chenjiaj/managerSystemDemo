@@ -1,0 +1,199 @@
+
+<!DOCTYPE html>
+<!--[if IE 8]> <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+    <title>
+        监控平台首页
+    </title>
+
+    <meta name="description" content="星星药品冷柜物联网管理系统"/>
+    <meta name="keywords" content="星星药品冷柜物联网管理系统 星星药品 物联网 管理系统"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8"/>
+    <!--css 样式-->
+    <link href="../../common/css/fontello.css" type="text/css" rel="stylesheet"/>
+    <link href="../../common/css/common.less" type="text/css" rel="stylesheet"/>
+    <link href="../../common/css/form.css" type="text/css" rel="stylesheet"/>
+    <link href="../../common/css/tips.css" type="text/css" rel="stylesheet"/>
+    <link href="../css/itemdetail.less" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+<!--[if lte IE 7]>
+<div id="ie-hock">
+    你正在使用星星药品冷柜物联网管理系统<strong>不支持</strong>的IE低级浏览器，<br />为了更好的使用OneNET，请您立即 <a class="blue" href="http://windows.microsoft.com/zh-cn/internet-explorer/download-ie" target="_blank">升级IE浏览器</a> 或者用更快更安全的 <a class="blue" href="https://www.google.com/intl/zh-CN/chrome/browser/?hl=zh-CN" target="_blank">谷歌浏览器Chrome</a> 。
+</div>
+<![endif]-->
+
+<!--******************************************* header部分 **********************************************-->
+<!--头部html代码-->
+<div id="header" class="clear-fix">
+    <div class="logoarea">
+        <div class="logo-img"></div>
+        <h1 class="logo-text">监控平台</h1>
+    </div>
+
+    <div class="user-info">
+        <span class="icons-user"></span>
+        <span>您好，admin，</span><a href="#" class="j_exit">[退出登录]</a>&nbsp; <span class="time"></span>
+    </div>
+</div>
+
+<!--******************************************* main中间部分 **********************************************-->
+<!--内容区域-->
+<div id="main">
+
+    <!--******************************************* 左边导航部分 **********************************************-->
+    <!--siderbar-->
+    <div class="siderbar">
+        <ul class="list">
+            <!--主页-->
+            <li><a href="../../index.html"><span class="icon icon-home"></span>平台首页</a></li>
+            <!--项目-->
+            <li><a href="#" class="active"><span class="icon icon-th-list"></span>项目</a>
+                <ul>
+                    <li><a href="itemlist.html"><span class="active-line"></span><span class="icon icon-right-dir"></span>项目列表</a></li>
+                    <li><a href="myitem.html" class="active"><span class="active-line"></span><span class="icon icon-right-dir"></span>我的项目</a></li>
+                    <li><a href="additem.html"><span class="active-line"></span><span class="icon icon-right-dir"></span>新增项目</a></li>
+                </ul>
+            </li>
+
+            <!--账户设置-->
+            <li><a href="#"><span class="icon icon-cog"></span>账户设置</a>
+                <ul class="hide">
+                    <li><a href="../../user/html/baseinfo.html"><span class="active-line"></span><span class="icon icon-right-dir"></span>基础信息</a></li>
+                    <li>
+                        <a href="../../user/html/modifypass.html"><span class="active-line"></span><span class="icon icon-right-dir"></span>修改密码</a>
+                    </li>
+                    <li>
+                        <a href="../../user/html/register.html"><span class="active-line"></span><span class="icon icon-right-dir"></span>邀请注册</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <!--siderbar end-->
+    <!--******************************************* 右边主体部分 **********************************************-->
+    <!--content-->
+    <div class="content">
+        <h2 class="content-title-style1"><span class="icons-header2"></span>
+            <a href="myitem.html" class="link">我的项目</a> &gt; 永奥图-app</h2>
+        <div class="introduce">
+            <h3>永奥图-APP<a href="additem.html">编辑</a></h3>
+            <p>ApiKey: 234sdjlvklsdf832flsdfsdfl2348fs</p>
+            <p>永奥图-App项目平台运营部设备云中心牵头项目。</p>
+        </div>
+
+        <br/>
+        <hr/>
+        <br/>
+
+        <div class="warn-info">
+            <h3 class="content-title-style2"><span class="icon icon-right-dir"></span>最近报警信息<a href="warnlist.html">更多</a></h3>
+            <!--表格通用样式-->
+            <table class="tableStyle">
+                <tr>
+                    <th>报警时间</th>
+                    <th>项目</th>
+                    <th>监控点</th>
+                    <th>上报内容</th>
+                    <th>项目负责人</th>
+                </tr>
+                <tr>
+                    <td>2015-02-03</td>
+                    <td>永奥图-APP</td>
+                    <td><a href="monitordetail.html">data_upload(数据上传)</a></td>
+                    <td>data uplod failed ....</td>
+                    <td>李孟君</td>
+                </tr>
+                <tr>
+                    <td>2015-02-03</td>
+                    <td>永奥图-APP</td>
+                    <td><a href="monitordetail.html">data_upload(数据上传)</a></td>
+                    <td>data uplod failed ....</td>
+                    <td>李孟君</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="monitor-manager">
+            <h3 class="content-title-style2"><span class="icon icon-right-dir"></span>监控点摘录(34)<a href="monitor.html">管理监控点</a></h3>
+            <!--表格通用样式-->
+            <table class="tableStyle">
+                <tr>
+                    <th>报警时间</th>
+                    <th>项目</th>
+                    <th>监控点</th>
+                    <th>上报内容</th>
+                    <th>项目负责人</th>
+                </tr>
+                <tr>
+                    <td>2015-02-03</td>
+                    <td>永奥图-APP</td>
+                    <td><a href="monitordetail.html">data_upload(数据上传)</a></td>
+                    <td>data uplod failed ....</td>
+                    <td>李孟君</td>
+                </tr>
+                <tr>
+                    <td>2015-02-03</td>
+                    <td>永奥图-APP</td>
+                    <td><a href="monitordetail.html">data_upload(数据上传)</a></td>
+                    <td>data uplod failed ....</td>
+                    <td>李孟君</td>
+                </tr>
+            </table>
+        </div>
+
+
+        <div class="relate-person">
+            <h3 class="content-title-style2"><span class="icon icon-right-dir"></span>项目关注人(3)</h3>
+            <!--为项目负责人加上class="manager-mark"-->
+            <ul class="person clear-fix">
+                <li>张展</li>
+                <li>李孟君</li>
+                <li class="manager-mark">张展</li>
+                <li>李孟君</li>
+                <li>张展</li>
+                <li>李孟君</li>
+                <li>张展</li>
+                <li>李孟君</li>
+                <li>张展</li>
+                <li>李孟君</li>
+                <li>张展</li>
+                <li>李孟君</li>
+                <li>张展</li>
+                <li>李孟君</li>
+                <li>张展</li>
+                <li>李孟君</li>
+                <li>张展</li>
+            </ul>
+
+            <form class="input-div clear-fix" id="add-form">
+                <label class="label-div">新增关注</label>
+                <div class="label-input">
+                    <input type="text" class="form-control" data-validation="required" id = "add-input"
+                           data-validation-error-msg="请输入新增人员" name="type" autocomplete="off"/>
+                    <button type="button" class="btn j_add_btn">新增</button>
+                    <ul class="list hide">
+                    </ul>
+                </div>
+            </form>
+        </div>
+
+    </div>
+    <!--content end-->
+</div>
+
+<!--******************************************* 底部footer **********************************************-->
+<!--底部-->
+<div id="footer">
+    中移物联网有限公司 监控平台 版权所有 Copyright(c)2015
+</div>
+
+<!--js-->
+<script type="text/javascript" src="../../common/js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="../../common/js/common.js"></script>
+<script type="text/javascript" src="../../common/js/tips.js"></script>
+<script type="text/javascript" src="../js/itemdetail.js"></script>
+</body>
+</html>

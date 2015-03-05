@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+    <title>
+        监控平台首页
+    </title>
+
+    <meta name="description" content="星星药品冷柜物联网管理系统"/>
+    <meta name="keywords" content="星星药品冷柜物联网管理系统 星星药品 物联网 管理系统"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8"/>
+    <!--css 样式-->
+    <link href="../../common/css/fontello.css" type="text/css" rel="stylesheet"/>
+    <link href="../../common/css/common.less" type="text/css" rel="stylesheet"/>
+    <link href="../../common/css/form.css" type="text/css" rel="stylesheet"/>
+    <style type="text/css">
+        .invite-register{
+            padding: 20px;;
+        }
+        .content .list{
+
+        }
+        .content .list li{
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+<!--[if lte IE 7]>
+<div id="ie-hock">
+    你正在使用星星药品冷柜物联网管理系统<strong>不支持</strong>的IE低级浏览器，<br />为了更好的使用OneNET，请您立即 <a class="blue" href="http://windows.microsoft.com/zh-cn/internet-explorer/download-ie" target="_blank">升级IE浏览器</a> 或者用更快更安全的 <a class="blue" href="https://www.google.com/intl/zh-CN/chrome/browser/?hl=zh-CN" target="_blank">谷歌浏览器Chrome</a> 。
+</div>
+<![endif]-->
+
+<!--******************************************* header部分 **********************************************-->
+<!--头部html代码-->
+<div id="header" class="clear-fix">
+    <div class="logoarea">
+        <div class="logo-img"></div>
+        <h1 class="logo-text">监控平台</h1>
+    </div>
+
+    <div class="user-info">
+        <span class="icons-user"></span>
+        <span>您好，admin，</span><a href="#" class="j_exit">[退出登录]</a>&nbsp; <span class="time"></span>
+    </div>
+</div>
+
+<!--******************************************* main中间部分 **********************************************-->
+<!--内容区域-->
+<div id="main">
+
+    <!--******************************************* 左边导航部分 **********************************************-->
+    <!--siderbar-->
+    <div class="siderbar">
+        <ul class="list">
+            <!--主页-->
+            <li><a href="../../index.html"><span class="icon icon-home"></span>平台首页</a></li>
+            <!--项目-->
+            <li><a href="#"><span class="icon icon-th-list"></span>项目</a>
+                <ul class="hide">
+                    <li><a href="../../item/html/itemlist.html"><span class="active-line"></span><span class="icon icon-right-dir"></span>项目列表</a></li>
+                    <li><a href="../../item/html/myitem.html"><span class="active-line"></span><span class="icon icon-right-dir"></span>我的项目</a></li>
+                    <li><a href="../../item/html/additem.html"><span class="active-line"></span><span class="icon icon-right-dir"></span>新增项目</a></li>
+                </ul>
+            </li>
+
+            <!--账户设置-->
+            <li><a href="#"  class="active"><span class="icon icon-cog"></span>账户设置</a>
+                <ul>
+                    <li><a href="baseinfo.html"><span class="active-line"></span><span class="icon icon-right-dir"></span>基础信息</a></li>
+                    <li>
+                        <a href="modifypass.html"><span class="active-line"></span><span class="icon icon-right-dir"></span>修改密码</a>
+                    </li>
+                    <li>
+                        <a href="register.html" class="active"><span class="active-line"></span><span class="icon icon-right-dir"></span>邀请注册</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <!--siderbar end-->
+    <!--******************************************* 右边主体部分 **********************************************-->
+    <!--content-->
+    <div class="content">
+        <h2 class="content-title-style1"><span class="icons-header2"></span>
+            邀请注册</h2>
+        <div class="invite-register">
+            <button type="button" class="btn j_invitBtn">点击邀请注册，生成注册链接</button>
+        </div>
+        <h3 class="content-title-style2"><span class="icon icon-right-dir"></span>注册链接</h3>
+        <ul class="list">
+
+        </ul>
+    </div>
+    <!--content end-->
+</div>
+
+<!--******************************************* 底部footer **********************************************-->
+<!--底部-->
+<div id="footer">
+    中移物联网有限公司 监控平台 版权所有 Copyright(c)2015
+</div>
+
+<!--js-->
+<script type="text/javascript" src="../../common/js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="../../common/js/common.js"></script>
+<script type="text/javascript">
+    (function(){
+        $(function(){
+            $(".j_invitBtn").click(function(){
+                $.post('',function(res){
+                    var url = 'http://www.baidu.com';
+                    $('.content .list').append('<li><a href="'+url+'" target="_blank">'+url+'</a></li>');
+                });//正式请求参数要加上'json'
+            });
+        });
+    })();
+</script>
+</body>
+</html>
